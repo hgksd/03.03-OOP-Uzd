@@ -2,8 +2,11 @@ class Objekts:
     def __init__(self, nosaukums, veids):
         self.nosaukums = nosaukums
         self.veids = veids
-
+    
     def paradi_informaciju(self):
+        """
+        Displays information about object
+        """
         print(f"Objekts: {self.nosaukums}, Veids: {self.veids}")
 
 class Grāmata(Objekts):
@@ -11,6 +14,9 @@ class Grāmata(Objekts):
         super().__init__(nosaukums, veids )
 
     def paradi_informaciju(self):
+        """
+        Displays information about object
+        """
         print(f"Grāmata: {self.nosaukums}, Veids: {self.veids}")
 
 
