@@ -1,5 +1,15 @@
 import serij
 import extensions
+import string
+import random
+
+
+skibidi = []
+
+for i in range (4):
+    skibidi.append(serij.Objekts(nosaukums="".join([random.choice(string.ascii_letters) for _ in range(7)]),veids="".join([random.choice(string.ascii_letters) for _ in range(7)])))
+for object in skibidi:
+    object.paradi_informaciju()
 
 print("Creating Object Dog...")
 some_object = serij.Objekts(nosaukums="Dog", veids="Animal")
